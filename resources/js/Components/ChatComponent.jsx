@@ -39,7 +39,7 @@ function ChatComponent() {
                 body: JSON.stringify({message:input}),
             });
 
-            const response = await axios.post('https://api.openai.com/v1/engines/davinci-codex/completions',{
+            const response = await axios.post('',{
                 prompt:input,
                 max_tokens: 150,
             },{
